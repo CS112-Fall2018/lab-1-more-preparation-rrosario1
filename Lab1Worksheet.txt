@@ -1,6 +1,10 @@
-Lab 1 Worksheet
+﻿Lab 1 Worksheet
 
 1. What if 12 bits were used to store a signed integer. What is the biggest/smallest possible integer?
+
+2^(n-1) - 1
+
+-2048, 2047
 
 2. Think about possible values and their range, say what type of variable would be suitable for the following, and suggest a name for it too. 
 
@@ -9,15 +13,27 @@ For example: the temperature of a room in degrees Fahrenheit. Room temperature i
 
 (i) The number of pages in a book; 
 
+Short - Maximum number in a short is 32,767; hopefully there are no books with more pages. It would not be a byte because a byte maximum value is only 127. Most books are longer. A suitable variable name would be bookPages.
+
 (ii) The number of atoms in a book; 
+
+Long - Maximum number in a long is 9,223,372,036,854,775,807; there should be a very large number of atoms in a book, larger than the maximum value for the int data type. A suitable variable name would be bookAtoms. 
 
 (iii) The length of a side of a triangle in inches; 
 
+Float/Double - The length of a side of a triangle in inches could be very large since its units is in inches. It can be represented by a non-integer number like 5.52, so the type must be a float or double, depending on the accuracy required. A suitable variable name would be sideLength.
+
 (iv) Your name; 
+
+Char - this is used for letters; A suitable variable name would be myName.
 
 (v) Whether or not a nucleus has decayed; 
 
+Boolean - whether or not a nucleus has decayed is a true or false statement. A suitable variable name would be nucleusDecayed.
+
 (vi) The probability that it could have decayed. 
+
+Float/Double - Probability would be between 0 and 1, including non-integers. For example, the probability could be 0.6754, depending on accuracy required, the type must be float or double. A suitable variable name would be probabilityDecayed.
 
 3. Start to do a little java programming! 
 	Follow the example of the Hello.java program and do some testing of Java int and float.
